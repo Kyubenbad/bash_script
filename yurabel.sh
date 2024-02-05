@@ -3,6 +3,7 @@ mkdir yurabel1
 cd yurabel1
 mkdir ki406
 cd ki406
+echo '' > log.txt
 echo 'y.belichenko007@gmail.com' > yurabel.txt
 cp yurabel.txt /home
 
