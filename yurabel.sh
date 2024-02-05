@@ -17,3 +17,13 @@ if [[ $(grep -E -c "$email_regex" "$file_path") -gt 0 ]]; then
 else
     echo "Файл не містить електронної пошти."
 fi
+
+log_file="/home/osboxes/yurabel1/ki406/log.txt"
+apache_log="/home/osboxes/yurabel1/ki406/Apache_2.4-PHP_5.5-5.6_queriesa.log"
+
+
+grep ' " 404 ' "$apache_log" | tee "$log_file"
+
+
+error_count=$(grep -c ' " 404 ' "$apache_log")
+echo "Number of 404 errors: $error_count"
