@@ -14,9 +14,9 @@ email_regex="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 
 
 if [[ $(grep -E -c "$email_regex" "$file_path") -gt 0 ]]; then
-    echo "Файл містить електронну пошту."
+    echo "File contains email"
 else
-    echo "Файл не містить електронної пошти."
+    echo "File do not contains email"
 fi
 
 log_file="/home/osboxes/yurabel1/ki406/log.txt"
