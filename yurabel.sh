@@ -25,7 +25,7 @@ log_file="/home/osboxes/yurabel1/ki406/log.txt"
 apache_log="/home/osboxes/yurabel1/ki406/Apache_2.4-PHP_5.5-5.6_queriesa (1).log"
 
 
-grep ' " 404 ' "$apache_log" | tee "$log_file"
+grep '404' "$apache_log" | tee "$log_file"
 
 
 error_count=$(grep -c ' " 404 ' "$apache_log")
