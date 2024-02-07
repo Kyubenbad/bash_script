@@ -7,7 +7,7 @@ cd ki406
 echo '' > log.txt
 echo 'y.belichenko007@gmail.com' > yurabel.txt
 cp yurabel.txt /home
-cp 'Apache_2.4-PHP_5.5-5.6_queriesa (1).log' /home/osboxes/yurabel1/ki406
+cp /home/osboxes/bash_script/'Apache_2.4-PHP_5.5-5.6_queriesa (1).log' /home/osboxes/yurabel1/ki406
 
 file_path="/home/osboxes/yurabel1/ki406/yurabel.txt"
 
