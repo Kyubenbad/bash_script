@@ -1,4 +1,5 @@
 #! /bin/bash
+cd /home/osboxes
 mkdir yurabel1
 cd yurabel1
 mkdir ki406
