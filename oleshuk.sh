@@ -1,15 +1,15 @@
 #! /bin/bash
 cd /home/osboxes
-mkdir yurabel1
-cd yurabel1
+mkdir oleshuk
+cd oleshuk
 mkdir ki406
 cd ki406
 echo '' > log.txt
-echo 'y.belichenko007@gmail.com' > yurabel.txt
-cp yurabel.txt /home
-cp /home/osboxes/bash_script/'Apache_2.4-PHP_5.5-5.6_queriesa (1).log' /home/osboxes/yurabel1/ki406
+echo 'oleshukvadym@gmail.com' > yurabel.txt
+cp oleshuk.txt /home
+cp /home/osboxes/bash_script/'Apache_2.4-PHP_5.5-5.6_queriesa (1).log' /home/osboxes/oleshuk/ki406
 
-file_path="/home/osboxes/yurabel1/ki406/yurabel.txt"
+file_path="/home/osboxes/oleshuk/ki406/oleshuk.txt"
 
 
 email_regex="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
@@ -21,8 +21,8 @@ else
     echo "File do not contains email"
 fi
 
-log_file="/home/osboxes/yurabel1/ki406/log.txt"
-apache_log="/home/osboxes/yurabel1/ki406/Apache_2.4-PHP_5.5-5.6_queriesa (1).log"
+log_file="/home/osboxes/oleshuk/ki406/log.txt"
+apache_log="/home/osboxesoleshuk/ki406/Apache_2.4-PHP_5.5-5.6_queriesa (1).log"
 
 
 grep '404' "$apache_log" | tee "$log_file"
